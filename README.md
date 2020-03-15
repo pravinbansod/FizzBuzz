@@ -1,4 +1,4 @@
 # FizzBuzz
-FizzBuzz implementations using Java
+FizzBuzz implementation using Java
 
 Sample Client: com.pravin.learning.fizzbuzz.client.FizzBuzzClient
