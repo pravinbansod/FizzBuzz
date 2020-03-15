@@ -3,6 +3,6 @@ package com.pravin.learning.fizzbuzz.number.descriptor;
 @FunctionalInterface
 public interface BuzzDecider {
 
-  boolean isBuzz(int number);
+	boolean isBuzz(int number);
 
 }

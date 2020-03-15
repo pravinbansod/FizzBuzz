@@ -4,21 +4,28 @@ import java.io.PrintStream;
 
 import com.pravin.learning.fizzbuzz.number.descriptor.NumberDescriptorService;
 
+/**
+ *
+ * Number printer service using given {@link NumberDescriptorService} and
+ * {@link PrintStream}.
+ *
+ */
 public class NumberPrintServiceImpl implements NumberPrintService {
 
-  private final NumberDescriptorService numberDescriptorService;
-  private final PrintStream printStream;
+	private final NumberDescriptorService numberDescriptorService;
+	private final PrintStream printStream;
 
-  public NumberPrintServiceImpl(final NumberDescriptorService numberDescriptorService, final PrintStream printStream) {
-    this.numberDescriptorService = numberDescriptorService;
-    this.printStream = printStream;
-  }
+	public NumberPrintServiceImpl(final NumberDescriptorService numberDescriptorService,
+			final PrintStream printStream) {
+		this.numberDescriptorService = numberDescriptorService;
+		this.printStream = printStream;
+	}
 
-  @Override
-  public void printNumbers(int firstNumber, int lastNumber) {
-    for (int i = firstNumber; i <= lastNumber; i++) {
-      printStream.println(numberDescriptorService.getWordForNumber(i));
-    }
+	@Override
+	public void printNumbers(int firstNumber, int lastNumber) {
+		for (int i = firstNumber; i <= lastNumber; i++) {
+			printStream.println(numberDescriptorService.getWordForNumber(i));
+		}
 
-  }
+	}
 }
